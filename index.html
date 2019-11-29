@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <title>Joes Pizza Place Download</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | MyFirstGame</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Downloads.json", {onProgress: UnityProgress});
+    </script>
   </head>
   <body>
-    <h1>Joes Pizza Place Game Download</h1>
-    <span>&nbsp&nbsp&nbsp&nbsp</span><a href="JPP.zip">JPP zip folder. (Windows)</a>
-    <p>&nbsp&nbsp&nbsp&nbspExtract, after you get the zip folder, then go into the folder and click on the app "Joes Pizza Place", located inside the folder. If you open it, there will probably be a warning from Windows SmartSceen. Click on "<u>More info</u>", and then a button will appear saying "Run anyway". Click on that, and you should be able to play.</p>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 540px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">MyFirstGame</div>
+      </div>
+    </div>
   </body>
 </html>
